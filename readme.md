@@ -13,11 +13,12 @@
 
 ## 0. Ficha del proyecto
 
-### **0.1. Tu nombre completo:**
+### **0.1. Tu nombre completo:** Guillermo Rocha Garrido
 
-### **0.2. Nombre del proyecto:**
+### **0.2. Nombre del proyecto:** AI Monitoring
 
 ### **0.3. Descripción breve del proyecto:**
+AI Monitoring es una aplicación web interna para directivos y managers de ingeniería que permite monitorizar la adopción de IA en los equipos de desarrollo, controlar el coste y evaluar su impacto en productividad. La plataforma centraliza datos de LiteLLM y Jira para ofrecer KPIs accionables, alertas proactivas y análisis ROI por desarrollador, equipo y periodo.
 
 ### **0.4. URL del proyecto:**
 
@@ -36,11 +37,20 @@
 
 ### **1.1. Objetivo:**
 
-> Propósito del producto. Qué valor aporta, qué soluciona, y para quién.
+AI Monitoring es una aplicación web interna orientada a perfiles de dirección y gestión (CTO, Dirección General y Engineering Managers) que permite monitorizar, medir y potenciar la adopción de IA en equipos de desarrollo.
+Su objetivo es transformar datos dispersos de uso de herramientas IA en información accionable para tomar decisiones de gestión: detectar baja adopción, identificar fricciones (como caídas de uso o posible shadow AI), controlar el coste y evaluar el impacto real en productividad cruzando datos de LiteLLM con métricas de entrega de Jira.
+La meta estratégica del producto es que el 100% de los desarrolladores utilicen IA al menos el 80% de los días laborables (métrica `used days`).
 
 ### **1.2. Características y funcionalidades principales:**
 
-> Enumera y describe las características y funcionalidades específicas que tiene el producto para satisfacer las necesidades identificadas.
+- **Autenticación corporativa y control de acceso:** login con Microsoft SSO (Azure AD) y acceso restringido a usuarios autorizados.
+- **Home de seguimiento global:** dashboard con KPIs dinámicos (% devs activos, used days medio, coste total, ratio entrega/coste), gráfico temporal y tabla de desarrolladores.
+- **Tabla avanzada de desarrolladores:** ordenación, scroll infinito y filtros por equipo/cliente, agente, modelo, alertas, búsqueda y periodo (mes, trimestre, sprint o rango personalizado).
+- **Perfil de desarrollador (drill-down):** vista individual con KPIs, evolución de uso, distribución por modelo/agente, coste detallado y cruce de uso IA con sprints.
+- **Vista ROI (IA x Jira):** análisis por equipo/cliente con evolución temporal comparada entre uso de IA, coste y métrica de entrega (story points en MVP).
+- **Motor de alertas proactivo:** detección automática de baja adopción, caídas de uso, posibles casos de shadow AI y desviaciones de coste a nivel individual y de equipo.
+- **Ajustes globales configurables:** umbrales de used days, shadow AI y coste, además del periodo por defecto de análisis.
+- **Sincronización diaria de datos:** ingestión automática desde LiteLLM y Jira a una base de datos local para consolidar métricas y garantizar trazabilidad.
 
 ### **1.3. Diseño y experiencia de usuario:**
 
